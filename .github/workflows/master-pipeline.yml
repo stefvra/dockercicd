@@ -24,7 +24,7 @@ jobs:
       run: |
         docker run \
         --entrypoint=/bin/bash \
-        project-api:latest \
+        ghcr.io/stefvra/dockercicd/project-api:latest \
         ./script/test
 
     - name: Login and push the Docker image to Github Packages
